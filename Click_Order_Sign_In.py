@@ -9,11 +9,11 @@ driver.maximize_window()
 driver.get("https://www.amazon.com/")
 
 driver.find_element(By.XPATH, "//a[@href='/gp/css/order-history?ref_=nav_orders_first']").click()
-expected_result = 'Sign-In'
-actual_result = driver.find_element(By.XPATH, "//h1[@class='a-spacing-small']").text
-assert expected_result == actual_result, f'Expected{expected_result} but got {actual_result}'
+expected_text = 'Sign-In'
+actual_text = driver.find_element(By.XPATH, "//h1[@class='a-spacing-small']").text
+assert expected_text == actual_text, f'Expected{expected_text} but got {actual_text}'
 print('Test case passed')
 
-driver.find_element(By.ID, 'ap_email')
+assert driver.find_element(By.ID, 'ap_email').is_displayed()
 
 driver.quit()
