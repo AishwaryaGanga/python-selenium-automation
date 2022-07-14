@@ -20,7 +20,7 @@ driver.find_element(By.CSS_SELECTOR,'input#ap_email')
 driver.find_element(By.CSS_SELECTOR,'#continue')
 
 #by CSS type attribute
-driver.find_element(By.CSS_SELECTOR,"input[type='password'][id='ap_password']")#multiple attributes
+driver.find_element(By.CSS_SELECTOR,"input[type='password']#ap_password")#multiple attributes
 driver.find_element(By.CSS_SELECTOR,"input[name='passwordCheck']")
 
 #by CSS Href attribute
