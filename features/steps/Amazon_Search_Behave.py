@@ -10,7 +10,7 @@ def open_amazon(context):
     context.driver.find_element(By.ID, 'twotabsearchtextbox').send_keys('Coffee')
     context.driver.find_element(By.ID, 'nav-search-submit-button').click()
 
-@then("Results for coffee shown")
+@then ("Results for coffee shown")
 def open_amazon(context):
     expected_result = '"Coffee"'
     actual_result = context.driver.find_element(By.XPATH, "//span[@class='a-color-state a-text-bold']").text

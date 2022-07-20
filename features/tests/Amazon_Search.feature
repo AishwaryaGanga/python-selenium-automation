@@ -3,6 +3,6 @@ Feature: Amazon Product Search Test
 
 
   Scenario: User can search for a product
-    Given Open amazon page
+    Given Open Amazon Page
     When Search for word coffee on amazon
     Then Results for coffee shown

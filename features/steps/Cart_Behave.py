@@ -1,10 +1,6 @@
 from selenium.webdriver.common.by import By
 from behave import given, when, then
 
-@given('Open amazon.com page1')
-def open_amazon(context):
-    context.driver.get("https://www.amazon.com/")
-
 @when('Click on the cart icon')
 def open_amazon(context):
     context.driver.find_element(By.CSS_SELECTOR, '.nav-cart-icon.nav-sprite').click()
